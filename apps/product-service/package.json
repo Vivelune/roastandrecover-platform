@@ -1,0 +1,22 @@
+{
+  "name": "product-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx --env-file=.env --watch src/index.ts",
+
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.19",
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "*",
+    "@types/express": "types/express"
+  }
+}

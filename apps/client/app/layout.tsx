@@ -4,6 +4,7 @@ import "./globals.css";
 import { ToastContainer } from "react-toastify";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { ClerkProvider, } from "@clerk/nextjs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +27,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <ClerkProvider>
     <html lang="en">
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -40,5 +43,6 @@ export default function RootLayout({
           <ToastContainer position="bottom-right" className="text-xs font-semibold "/>
       </body>
     </html>
+    </ClerkProvider>
   );
 }

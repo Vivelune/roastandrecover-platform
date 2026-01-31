@@ -3,6 +3,8 @@ import React from 'react'
 import Searchbar from './Searchbar'
 import { BellIcon, HomeIcon, ShoppingBag } from 'lucide-react'
 import ShoppingCartIcon from './ShoppingCartIcon'
+import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@clerk/nextjs'
+import ProfileButton from './ProfileButton'
 
 const Navbar = () => {
   return (
@@ -26,7 +28,15 @@ const Navbar = () => {
           <HomeIcon className='w-4 h-4 text-gray-600 '/> 
         </Link>
           
-          <Link href="/login" className='text-sm py-2 px-4 rounded-2xl font-semibold   hover:bg-gray-100 duration-400 ease-in-out'> Sign In</Link>
+          <header className="flex justify-end items-center p-4 gap-4 h-16">
+            <SignedOut>
+              <SignInButton />
+              
+            </SignedOut>
+            <SignedIn>
+              <ProfileButton/>
+            </SignedIn>
+          </header>
       </div>
         
     </div>

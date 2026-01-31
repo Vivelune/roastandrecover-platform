@@ -280,6 +280,16 @@
     "@clerk/shared" "^3.44.0"
     tslib "2.8.1"
 
+"@clerk/express@^1.7.67":
+  version "1.7.67"
+  resolved "https://registry.yarnpkg.com/@clerk/express/-/express-1.7.67.tgz#6b8a9375615446c7d023d507b56d649276e38d23"
+  integrity sha512-KNwpOzGgbskhyQrpkSuxynVCFVNrMdlXXMPgdv8H/iHzI+KzjjTpdquT19Jx3m+zOeNOBCgHPGUwWPeFLpD+/w==
+  dependencies:
+    "@clerk/backend" "^2.29.7"
+    "@clerk/shared" "^3.44.0"
+    "@clerk/types" "^4.101.14"
+    tslib "2.8.1"
+
 "@clerk/nextjs@^6.37.1":
   version "6.37.1"
   resolved "https://registry.yarnpkg.com/@clerk/nextjs/-/nextjs-6.37.1.tgz#8b4e7c851d9cb7d4f23b86031d71ba6b984fbf60"
@@ -2730,7 +2740,7 @@ dotenv@16.0.3:
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
   integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
 
-dotenv@^17.2.1:
+dotenv@^17.2.1, dotenv@^17.2.3:
   version "17.2.3"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-17.2.3.tgz#ad995d6997f639b11065f419a22fabf567cdb9a2"
   integrity sha512-JVUnt+DUIzu87TABbhPmNfVdBDt18BLOWjMUFJMSi/Qqg7NTYtabbvSNJGOJ7afbRuv9D/lngizHtP7QyLQ+9w==

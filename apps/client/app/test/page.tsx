@@ -16,6 +16,14 @@ const TestPage = async () => {
             Authorization:`Bearer ${token }`
         }
     })
+     const resPayment = await fetch("http://localhost:8002/test", {
+        headers:{
+            Authorization:`Bearer ${token }`
+        }
+    })
+
+    const dataPayment =await resPayment.json()
+   
 
     const dataProduct =await resProduct.json()
     const dataOrder =await resOrder.json()
@@ -23,6 +31,11 @@ const TestPage = async () => {
     console.log(dataProduct, "THIS IS PRODUCT SERVICE")
 
     console.log(dataOrder, "THIS IS ORDER SERVICE")
+    console.log(dataPayment, "THIS IS PAYMENT SERVICE")
+
+
+
+
   return (
     <div>
       Test

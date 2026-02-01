@@ -6,8 +6,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-  "dev": "tsx --env-file=.env --watch src/index.ts",
-
+    "dev": "tsx --env-file=.env --watch src/index.ts",
     "check-types": "tsc --noEmit"
   },
   "devDependencies": {
@@ -17,6 +16,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "@clerk/fastify": "^2.6.19",
     "fastify": "^5.7.2"
   }
 }

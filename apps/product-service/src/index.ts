@@ -1,6 +1,7 @@
 import express, {Request, Response} from "express"
 import cors from "cors"
 import { clerkMiddleware, getAuth } from '@clerk/express'
+import { shouldBeUser } from "./middleware/authMiddleware.js"
 
 const app = express()
 
@@ -22,20 +23,13 @@ app.get("/health", (req:Request,res: Response)=>{
 )})
 
 
-app.get("/test", (req:Request,res:Response)=>{
-     const auth = getAuth(req)
-     console.log(auth)
-     const userId = auth.userId
-     if(!userId){
-        return res.status(401).json({
-            message:"You are not logged in."
-        })
-     }
+app.get("/test", shouldBeUser, (req:Request,res:Response)=>{
+    
       res.json(
-    {message : "Product Service Authenticated"}
+    {message : "Product Service Authenticated", userId:req.userId }
 )})
 
-app.listen(8000, ()=>{
+app.listen(8000, ()=>{  
     console.log("Port running in 8000 on Product Service")
 })
 

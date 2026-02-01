@@ -5,18 +5,24 @@ const TestPage = async () => {
 
     const {getToken} = await auth()
     const token = await getToken()
-    console.log(token)
 
-    const res = await fetch("http://localhost:8000/test", {
+    const resProduct = await fetch("http://localhost:8000/test", {
+        headers:{
+            Authorization:`Bearer ${token }`
+        }
+    })
+    const resOrder = await fetch("http://localhost:8001/test", {
         headers:{
             Authorization:`Bearer ${token }`
         }
     })
 
-    const data =await res.json()
-    
+    const dataProduct =await resProduct.json()
+    const dataOrder =await resOrder.json()
 
-    console.log(data)
+    console.log(dataProduct, "THIS IS PRODUCT SERVICE")
+
+    console.log(dataOrder, "THIS IS ORDER SERVICE")
   return (
     <div>
       Test

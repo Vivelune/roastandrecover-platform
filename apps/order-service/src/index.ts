@@ -19,12 +19,12 @@ fastify.get("/health", (request, reply)=>{
 
 
 fastify.get("/test", {preHandler:shouldBeUser}, (request, reply)=>{
-   const { userId } = getAuth(request)
+   
    
   
   return reply.send({
     message:"Order service is authenticated",
-    userId
+    userId : request.userId
   })
 })
 

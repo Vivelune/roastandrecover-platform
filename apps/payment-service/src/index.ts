@@ -24,7 +24,8 @@ app.get('/test', shouldBeUser, (c) => {
 
 
   return c.json({
-    message: 'Payment Service is Authenticated!',
+    message: 'Payment Service is Authenticated!', 
+    userId:c.get("userId")
   })
 })
 

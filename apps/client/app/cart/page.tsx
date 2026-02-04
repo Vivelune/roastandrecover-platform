@@ -30,21 +30,21 @@ const steps = [
 // const cartItems:CartItemsType=[
 //     {
 //         id:1,
-//         name:"Lumière Travel Tea Set",
-//         shortDescription: "A refined, portable tea ritual — four elegant cups, one compact pouch, endless moments of calm.",
-//         description:"Crafted for tea lovers who refuse to compromise on elegance while traveling, the Lumière Travel Tea Set transforms any place into a personal tea sanctuary. Designed with precision and aesthetic harmony, this set includes four beautifully coordinated tea cups, each available in a distinct, premium colorway. Every piece fits seamlessly into a compact, soft-touch pouch, making it perfect for travel, office use, or mindful outdoor moments. Whether you’re sharing tea with friends or enjoying a quiet solo brew, this set delivers a luxurious experience wherever you go. Minimalist. Functional. Timeless.",
-//         price: 69,
-//         sizes: ["120ml", "150ml", "180ml"],
-//         colors : ["Aqua" , "Orange", "White", "Black"],
-//         images:{
-//             Aqua: "/AquaTeaset.JPG",
-//             Orange: "/OrangeUltraTeaSet.JPG",
-//             White: "/whiteTeaSetBag.JPG",
-//             Black: "/matteBlackTeaSet.JPG"
-//         },
-//         quantity:1,
-//         selectedSize:"120ml",
-//         selectedColor:"Aqua"
+        // name:"Lumière Travel Tea Set",
+        // shortDescription: "A refined, portable tea ritual — four elegant cups, one compact pouch, endless moments of calm.",
+        // description:"Crafted for tea lovers who refuse to compromise on elegance while traveling, the Lumière Travel Tea Set transforms any place into a personal tea sanctuary. Designed with precision and aesthetic harmony, this set includes four beautifully coordinated tea cups, each available in a distinct, premium colorway. Every piece fits seamlessly into a compact, soft-touch pouch, making it perfect for travel, office use, or mindful outdoor moments. Whether you’re sharing tea with friends or enjoying a quiet solo brew, this set delivers a luxurious experience wherever you go. Minimalist. Functional. Timeless.",
+        // price: 69,
+        // sizes: ["120ml", "150ml", "180ml"],
+        // colors : ["Aqua" , "Orange", "White", "Black"],
+        // images:{
+        //     Aqua: "/AquaTeaset.JPG",
+        //     Orange: "/OrangeUltraTeaSet.JPG",
+        //     White: "/whiteTeaSetBag.JPG",
+        //     Black: "/matteBlackTeaSet.JPG"
+        // },
+        // quantity:1,
+        // selectedSize:"120ml",
+        // selectedColor:"Aqua"
 //     },
 //     {
 //         id:2,
